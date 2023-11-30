@@ -1,0 +1,16 @@
+create database testingd
+use testingdb;
+
+CREATE TABLE `user_tbl` (
+  `id` int(11) NOT NULL,
+  `Nama` varchar(150) NOT NULL,
+  `Produk` varchar(150) NOT NULL,
+  `Jumlah` varchar(150) NOT NULL,
+  `Harga` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `user_tbl`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `user_tbl`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4
